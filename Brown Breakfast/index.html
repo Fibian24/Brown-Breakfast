@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brown Breakfast</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+  <script src="https://kit.fontawesome.com/ae947b4311.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="Logo\20230313_133431_0000.png" type="image/jpg">
+</head>
+<body class="body">
+  <header class="nav-bar">
+    <!-- <a href="index.html">
+      <img src="Logo\20230313_133431_0000.png" alt="Logo" class="logo">
+    </a>
+    <ul class="nav">
+      <li class="nav-list"><a href="index.html" class="About Us"> About us </a></li>
+      <li class="nav-list"><a href="Menu.html" class="Menu"> Menu </a></li>
+      <li class="nav-list"><a href="Contacts.html" class="Talk"> Let's Talk </a></li>
+    </ul>
+    <button class="menu-icon">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header> -->
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <a href="index.html">
+        <img src="Logo\20230313_133431_0000.png" alt="Logo" class="logo">
+    </a>
+    <ul>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Contacts.html">Let's Talk</a></li>
+    </ul>
+</nav>
+
+  <section class="hero">
+    <div class="eyecatcher">
+      <p class="introduction">
+        Start your day the Brown way at the <span class="b">B</span>rown <span class="b">B</span>reakfast
+        <br><span class="motivation">There's no better way of starting a day than a day started the Brown way.</span>
+      </p>
+    </div>
+    <div  class="picDiv">
+      <img src="Products\bg1.jpg" alt="Coffee machine brewing coffee" class="pic">
+    </div>    
+  </section>
+
+  <div class="about">
+    <div class="picDiv1">
+      <img src="Products\pexels-denis-zagorodniuc-3230010.jpg" alt="Coffe on a coffee table" class="pic1">
+    </div>
+    <div class="descriptionn">
+      <p class="abt">  
+      <h2>About <u>Us</u></h2><br>
+      <span class="abt1">
+        We are a Breakfast Cafe for all types of people. Wherether it be people with a sweet tooth or people who just 
+        don't prefer sugar.
+      </span>
+      <br>
+      <br>
+      <span class="abt2">
+        We make our Breakfasts with a special recipe to deliver the best of quality and taste. We use a simple but best
+        ingredient in all our products, LOVE. Our mission is to provide everyone with the best way to start a productive day.
+      </span>
+      </p>
+    </div>  
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".menu-icon").on("click",() => {
+        $(".nav-list").toggleClass(".menu-pressed")
+      })
+    })
+  </script>
+</body>
+</html>
